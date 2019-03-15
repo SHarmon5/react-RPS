@@ -43,7 +43,7 @@ class RockPaperScissors extends React.Component {
       else if (this.state.selectAnswer === "paper")
       {this.state.response = "computer chose Paper, you lose"}
         else
-        {this.state.response = "it's a bust, try again"}
+        {this.state.response = "it's a bust, try again"}            
   }
   
   computerChoice2 = () => {
@@ -53,7 +53,7 @@ class RockPaperScissors extends React.Component {
     else if (this.state.selectAnswer === "paper")
     {this.state.response = "it's a bust, try again"}
       else
-      {this.state.response = "computer chose Scissors, you win!"}
+      {this.state.response = "computer chose Rock, you win!"}
 }
 
 computerChoice3 = () => {
@@ -63,7 +63,7 @@ computerChoice3 = () => {
   else if (this.state.selectAnswer === "paper")
   {this.state.response = "computer chose Paper, you win!"}
     else
-    {this.state.response = "computer chose Paper, you lose"}
+    {this.state.response = "computer chose Rock, you lose"}
 }
   
   render () {

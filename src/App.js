@@ -1,28 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Container, Header } from "semantic-ui-react";
 import './App.css';
+import RockPaperScissors from './RockPaperScissors';
 
 class App extends Component {
+
+
+
+  
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Container>
+        <Header style={{ display: "flex", justifyContent: "center", }}>
+          <h1>Let's play Rock Paper Scissors!</h1>
+        </Header>
+        <RockPaperScissors />
+
+      </Container>
     );
   }
 }
+
+
 
 export default App;
